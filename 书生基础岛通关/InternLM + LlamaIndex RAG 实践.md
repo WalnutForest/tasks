@@ -1,6 +1,7 @@
 # InternLM + LlamaIndex RAG 实践
 
 <!-- 进度：前期准备1.2完成，应该进行1.3 2024/9/19/19:42 -->
+<!-- 进度：完成 2024/9/20/16:03 -->
 
 ## 1. 基础任务
 
@@ -109,7 +110,7 @@ python llamaindex_internlm.py
 
 结果展示：
 
-![llamaindex_internlm结果.png](./images/llamaindex_internlm结果.png)
+![llamaindex_internlm结果.png](./images/task4-llamaindex_internlm结果.png)
 
 ### 1.4. LlamaIndex RAG
 
@@ -179,7 +180,7 @@ python llamaindex_RAG.py
 
 结果展示：
 
-![llamaindex_RAG结果.png](./images/llamaindex_RAG结果.png)
+![llamaindex_RAG结果.png](./images/task4-llamaindex_RAG结果.png)
 
 ### 1.5. LlamaIndex web
 
@@ -272,4 +273,4 @@ if st.session_state.messages[-1]["role"] != "assistant":
 
 输入`streamlit run app.py`运行。结果展示：
 
-![llamaindex_web结果.png](./images/llamaindex_web结果.png)
+![llamaindex_web结果.png](./images/task4-llamaindex_web结果.png)
