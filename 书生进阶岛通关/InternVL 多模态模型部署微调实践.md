@@ -1,6 +1,7 @@
 # InternVL 多模态模型部署微调实践
 
 <!-- 进度：pip install -e '.[deepspeed]' line45 -->
+<!-- 进度：4.1完成，进行4.2 -->
 
 ## 1. 任务简介
 
@@ -72,18 +73,31 @@ cp -r /root/share/new_models/datasets/CLoT_cn_2000 /root/InternLM/datasets/
 - 看看第一张图片
 
 ```bash
-cp InternLM/datasets/CLoT_cn_2000/ex_images/007aPnLRgy1hb39z0im50j30ci0el0wm.jpg InternLM/
+cp InternLM/datasets/ex_images/007aPnLRgy1hb39z0im50j30ci0el0wm.jpg InternLM/
 ```
 
-- 结果截图
+- 结果截图(可爱捏~)
 
 ![第一张图片](./images/task4-第一张图片.png)
 
-- 对应的回复
+- 看看第一张图片的标签
 
 ```json
-test
+  {
+    "image": "ex_images/007aPnLRgy1hb39z0im50j30ci0el0wm.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\n请你根据这张图片，讲一个脑洞大开的梗"
+      },
+      {
+        "from": "gpt",
+        "value": "『住手！现在的你还不是那家伙的对手！先撤吧！！"
+      }
+    ]
+  },
 ```
+
 
 ## 4. InternVL 推理部署
 
