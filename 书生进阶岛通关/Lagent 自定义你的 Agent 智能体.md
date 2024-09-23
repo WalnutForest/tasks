@@ -1,6 +1,6 @@
 # Lagent 自定义你的 Agent 智能体
 
-<!-- 进度：无 -->
+<!-- 进度：完成 -->
 
 ## 1. 基础任务
 
@@ -26,10 +26,6 @@ pip install termcolor==2.4.0
 pip install lmdeploy==0.5.2
 ```
 
-- 结果截图
-
-![Lagent环境准备](./images/task2-Lagent环境准备.png)
-
 - 源码下载lagent
 
 ```bash
@@ -53,10 +49,6 @@ pip install griffe==0.48.0
 conda activate agent_camp3
 lmdeploy serve api_server /share/new_models/Shanghai_AI_Laboratory/internlm2_5-7b-chat --model-name internlm2_5-7b-chat
 ```
-
-- 结果截图
-
-![LMDeploy部署InternLM2.5-7B-Chat](./images/task2-LMDeploy部署InternLM2.5-7B-Chat.png)
 
 - 在另一个窗口中启动 Lagent 的 Web Demo
 
@@ -174,4 +166,12 @@ from lagent.agents.internlm2_agent import INTERPRETER_CN, META_CN, PLUGIN_CN, In
 
 ![task2-Lagent文生图](./images/task2-Lagent文生图.png)
 
+![task2-Lagent图片](./images/task2-Lagent图片.png)
+
 ![task2-Lagent搜索论文](./images/task2-Lagent搜索论文.png)
+
+- 搜索具体结果如下：
+
+```json
+{"content": "Published: 2024-07-29\nTitle: MindSearch: Mimicking Human Minds Elicits Deep AI Searcher\nAuthors: Zehui Chen, Kuikun Liu, Qiuchen Wang, Jiangning Liu, Wenwei Zhang, Kai Chen, Feng Zhao\nSummary: Information seeking and integration is a complex cognitive task that consumes\nenormous time and effort. Inspired by the remarkable progress of Large Language\nModels, recent works attempt to solve this task by combining LLMs and search\nengines. However, these methods still obtain unsatisfying performance due to\nthree challenges: (1) complex requests often cannot be accurately and\ncompletely retrieved by the search engine once (2) corresponding information to\nbe integrated is spread over multiple web pages along with massive noise, and\n(3) a large number of web pages with long contents may quickly exceed the\nmaximum context length of LLMs. Inspired by the cognitive process when humans\nsolve these problems, we introduce MindSearch to mimic the human minds in web\ninformation seeking and integration, which can be instantiated by a simple yet\neffective LLM-based multi-agent framework. The WebPlanner models the human mind\nof multi-step information seeking as a dynamic graph construction process: it\ndecomposes the user query into atomic sub-questions as nodes in the graph and\nprogressively extends the graph based on the search result from WebSearcher.\nTasked with each sub-question, WebSearcher performs hierarchical information\nretrieval with search engines and collects valuable information for WebPlanner.\nThe multi-agent design of MindSearch enables the whole framework to seek and\nintegrate information parallelly from larger-scale (e.g., more than 300) web\npages in 3 minutes, which i"}
+```
