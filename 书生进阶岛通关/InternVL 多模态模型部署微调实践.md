@@ -325,6 +325,10 @@ cd XTuner
 NPROC_PER_NODE=1 xtuner train /root/InternLM/code/XTuner/xtuner/configs/internvl/v2/internvl_v2_internlm2_2b_qlora_finetune.py  --work-dir /root/InternLM/work_dir/internvl_ft_run_8_filter  --deepspeed deepspeed_zero1
 ```
 
+- 训练过程截图
+
+![训练过程](./images/task4-训练过程.png)
+
 - 结果截图
 
 ![qlora结果](./images/task4-qlora结果.png)
