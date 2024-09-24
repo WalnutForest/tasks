@@ -329,10 +329,6 @@ NPROC_PER_NODE=1 xtuner train /root/InternLM/code/XTuner/xtuner/configs/internvl
 
 ![训练过程](./images/task4-训练过程.png)
 
-- 结果截图
-
-![qlora结果](./images/task4-qlora结果.png)
-
 #### 4.2.3. 合并权重&&模型转换
 
 ```bash
@@ -360,6 +356,8 @@ response = pipe(('请你根据这张图片，讲一个脑洞大开的梗', image
 print(response.text)
 ```
 
-- 运行结果
+- 运行结果(猫猫可爱捏~)
 
 ![微调效果对比](./images/task4-微调后结果1.png)
+
+![微调效果对比](./images/task4-微调后结果2.png)
