@@ -289,7 +289,7 @@ git push
 
 - 生成流程的视频
 
-[演示视频链接](书生进阶岛通关/images/演示.mp4)
+[演示视频链接](./images/演示.mp4)
 
 ## 6. Hugging Face 的Space的链接
 
