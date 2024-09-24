@@ -289,7 +289,7 @@ git push
 
 - 生成流程的视频
 
-[演示视频链接]([./images/演示.mp4](https://github.com/WalnutForest/tasks/blob/829208cf1733006d42b7b9c0eee4a7637897278c/%E4%B9%A6%E7%94%9F%E8%BF%9B%E9%98%B6%E5%B2%9B%E9%80%9A%E5%85%B3/images/%E6%BC%94%E7%A4%BA.mp4))
+![record screenshot](./images/tmp.gif)
 
 ## 6. Hugging Face 的Space的链接
 
